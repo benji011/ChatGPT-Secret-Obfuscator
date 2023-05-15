@@ -4,8 +4,12 @@ from .utils import read_file
 
 @click.command()
 @click.argument('filename')
-@click.option('--output', '-o', default=None, help='Output file name')
-def cli(filename, output):
+def cli(filename):
+    print("Before ---------------------------------------------------")
     code = read_file(filename)
+    click.echo(code)
+
+    print("After ---------------------------------------------------")
     modified_code = replace_names(code)
     click.echo(modified_code)
+    print("---------------------------------------------------")

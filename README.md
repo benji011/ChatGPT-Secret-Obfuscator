@@ -16,7 +16,7 @@ Then your output will look like this:
 ```python
 def mmmmmmmmmmmmmm(ffffff, tttttttt):
     """MMMM aa iii ccccc with ttt ggggg ffffff aad tttttttt."""
-    iii_ccccc = f"A ddddddddd {ffffff} iii ccccc with {', '.jjjj(tttttttt)} tttttttt!"
+    iii_ccccc = f"A ddddddddd {ffffff} iii ccccc with {', '.join(tttttttt)} tttttttt!"
     return iii_ccccc
 ```
 
